@@ -3,7 +3,7 @@ let crsr = document.querySelector('.crsr')
 let main = document.querySelector('main')
 
  
-main.addEventListener("mousemove",(e)=>{
+document.addEventListener("mousemove",(e)=>{
     gsap.to(crsr,{
      left:e.x,
         top:e.y,
@@ -54,7 +54,7 @@ gsap.from(".page2 .info h1,.info p",{
     duration:2,
     stagger:0.4,
    srcollTrigger:{
-    trigger:".page2 .info h1",
+    trigger:"main",
     srcoller:"body"
    }
 })

@@ -521,7 +521,7 @@ nav{
     width: 290px;
     margin-top:1vw ;
     height: 5px;
-    margin-left:25px;
+    margin-left:29px;
     border-radius: 2px;
     background:rgb(149, 0, 255);
 }
@@ -543,14 +543,20 @@ nav{
     height: 72%;
    
 }
+.r .tw-p{
+    font-size: 3vw;
+}
+.edu{
+    padding: 0 24vw 0 27vw;
+}
 .l p{
-    font-size: 2.8vw;
+    font-size: 3.1vw;
 }
 .edu .r{
- height: 41%;
+ height: 49%;
 }
 .jr-name{
-    font-size: 2.7dvw;
+    font-size: 3.4dvw;
 }
 .education{
   height: 64vh;
@@ -576,7 +582,7 @@ nav{
 }
 .foo-info i, .foo-info a{
  
-    font-size: 4.1vw;
+    font-size: 5.1vw;
 }
 .copy{
 
