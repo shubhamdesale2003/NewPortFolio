@@ -35,7 +35,12 @@ tl.from(".logo h1, .menu",{
 
 })
 
-tl.from(".left p,.left h1",{
+tl.from(".left h1 ",{
+    x:-90,
+    opacity:0,
+    stagger:0.3
+})
+tl.from(".left a ",{
     x:-90,
     opacity:0,
     stagger:0.3
@@ -50,14 +55,11 @@ gsap.from(".page2 .info h1,.info p",{
 
     x:-100,
     opacity:0,
-    delay:3,
+    delay:7,
     duration:2,
     stagger:0.4,
-   srcollTrigger:{
-    trigger:"main",
-    srcoller:"body"
-   }
+  
 })
 
-
+ 
 
