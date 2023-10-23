@@ -20,7 +20,7 @@ header{
     /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('boy2.jpg'); */
     background-size: cover;
 
- background-position: left;
+    background-position: left;
     color: #fff;
     overflow: hidden;
     
@@ -34,7 +34,7 @@ header{
     place-items: center;
     border-radius: 50%;
     color: #fff6f6;
-    position: absolute;
+    position: fixed;
     scale: 0;
     opacity: 0;
     mix-blend-mode: difference;
@@ -46,7 +46,7 @@ nav{
     border-bottom: 2px solid #36005f;
     display: flex;
    position: fixed;
-    background-color: #130f17;
+    background-color: #1b1521;
     justify-content: space-between;
     align-items:center;
     z-index: 1;
@@ -68,11 +68,16 @@ nav{
     font-size: 1.5vw;
     margin-right: 40px;
     font-weight: 700;
+    padding:15px 0;
+    border-bottom: 4px solid #1b1521;
 }
 
 .menu a:hover{
     color:  rgb(149, 0, 255);
     transition: all .4s;
+    border-bottom: 4px solid rgb(149, 0, 255);
+    border-radius: 1px;
+
 }
 
 .menu a:nth-child(1){
@@ -111,24 +116,52 @@ nav{
     line-height:60px;
  
 }
-
+#tx{
+    color: rgb(7, 7, 28);
+    -webkit-text-stroke: 1.5px rgb(149, 0, 255);
+    transition:  color .4s;
+}
+#tx:hover{
+    color:rgb(149, 0, 255) ;
+   
+}
 .left h1{
     line-height:60px;
     font-size: 3vw;
+ 
 }
 .left h1 span{
     color: red;
 }
+.left .social {
+    margin-top: 20px;
+    
+}
+.left .social a{
+    text-decoration: none;
+
+}
+.left  .social i{
+    font-size: 2em;
+    margin-left: 15px;
+    /* border: 2px solid white;
+    border-radius: 50%; */
+    padding: 7px;
+    color: rgb(149, 0, 255);
+}
+.left .social .i{
+    margin-left: -13px;
+}
 .page1 .right{
     /* background: rgb(125, 255, 61); */
     flex-basis: 50%;
-    height: 100%;
+    height: 50%;
     padding: 9vw;
 }
 
 .right img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 60%;
     border-radius: 10px;
     display: none;
 }
@@ -158,7 +191,9 @@ nav{
 .image{
     /* background: rgb(0, 255, 234); */
     grid-area: image;
-    padding: 8vw;
+    padding: 10vw;
+
+    
 }
 
 .info h1{
@@ -177,10 +212,13 @@ nav{
 }
 
 .image img{
-    width: 100%;
+    width:88%;
     height: 60%;
-   object-fit: cover;
-    border-radius:20px;
+    object-fit: cover;
+    border-radius:50%;
+    background-color:rgb(149, 0, 255) ;
+    padding: 1vw;
+    filter:grayscale(100%) ;
 }
 
 
@@ -283,7 +321,7 @@ nav{
 .education h4{
     text-align: center;
     color: rgb(149, 0, 255);
-    font-size: 3vw;
+    font-size: 3em;
     padding: 2vw;
 }
 .edu{
@@ -293,6 +331,10 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 0 30vw 0 30vw;
+}
+.edu i{
+    color: rgb(149, 0, 255);
+ 
 }
 .edu .l{
     width: 50%;
@@ -320,6 +362,7 @@ nav{
 }
 .jr-name{
     padding-left: 1vw;
+    
 }
 
 .r .tw-p{
@@ -334,6 +377,52 @@ nav{
     color:#fff;
 }
 
+/* project section */
+
+.projects{
+ width: 100%;
+ /* height: 100vh; */
+ background:rgb(7, 7, 28);
+ /* display: grid;
+ place-items: center; */
+}
+.project-heading{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+.projects img{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin-left: 11rem;
+
+   
+}
+.project-info{
+    display: flex;
+ 
+
+}
+.project-para{
+    color: #fff;
+    width: 40%;
+    text-align: justify;
+    margin-left: 11rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  
+}
+.github{
+    margin-left: 8rem;
+    margin-top: 2rem;
+    background:#36005f ;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
 .footer{
     width: 100%;
     height: 100vh;
@@ -414,6 +503,10 @@ nav{
 
 
 @media only screen and (max-width:600px) {
+
+    .image{
+        margin-left: 8vw;
+    }
      
     .menu a{
      
@@ -448,11 +541,17 @@ nav{
     font-size: 7vw;
     line-height:32px;-
 }
-.left h1{
+.left #h1{
     line-height:49px;
     font-size: 8.8vw;
+    margin-top: 40vw;
 }
-
+.left h1{
+    font-size: 8.8vw;
+}
+.left .social .i{
+    margin-left: -8px;
+}
 .right img{
     
     /* flex-basis: 100%;
@@ -513,7 +612,7 @@ nav{
 }
 
 .lang i{
-    font-size: 5vw;
+    font-size: 7vw;
     padding-left:0;
    color: rgb(149, 0, 255);
 }
@@ -535,7 +634,7 @@ nav{
     padding-left: 8vw;
 }
 .tools i{
-    font-size: 5vw;
+    font-size: 7vw;
 }
     
 .edu .l{
@@ -549,6 +648,9 @@ nav{
 .edu{
     padding: 0 24vw 0 27vw;
 }
+.education h4{
+    font-size: 2em;
+}
 .l p{
     font-size: 3.1vw;
 }
@@ -556,7 +658,7 @@ nav{
  height: 49%;
 }
 .jr-name{
-    font-size: 3.4dvw;
+    font-size: .8em;
 }
 .education{
   height: 64vh;
@@ -604,5 +706,34 @@ font-size: 9vw;
     padding-left: 5vw;
 }
 
+.projects img{
+     margin-left: 0;
+     margin-top: 20px;
+     height: 28%;
+     object-fit:contain;
+     object-position:center;
+     width: 100%;
+}
+.project-info{
+   display: flex;
+   flex-direction: column;
+}
+.project-para{
+    margin-left:52px;
+    width: 75%;
+    font-size: 6vw;
+    opacity: .8;
+
+}
+.github{
+    margin-left: 84px;
+    width: 50%;
+    text-align: center;
+    font-weight: 800;
+}
+#tx{
+    -webkit-text-stroke: 0.5px rgb(149, 0, 255);
+   
+}
 
  }
